@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Grace Paulinus Jim | Professional Profile</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#career">Civil Service</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- HEADER -->
+      <section class="header section" id="home">
+        <img src="/image/pic_1.jpeg" alt="Dr. Grace Jim" />
+        <h1>Mrs Grace Paulinus Jim, Ph.D</h1>
+        <p>Public Health Practitioner | Retired Permanent Secretary</p>
+        <p>Email: gracejim23@gmail.com | Phone: 08028391062</p>
+        <p>Uyo, Akwa Ibom State, Nigeria</p>
+      </section>
+
+      <!-- ACADEMICS -->
+      <section class="section" id="academics">
+        <h2>Academics</h2>
+        <p>
+          Holder of a
+          <span class="highlight">Ph.D in Public Health Education (2022)</span>,
+          M.Sc. Community Health (2015), and B.Sc. (Ed) Health Education (2006).
+        </p>
+        <ul>
+          <li>Registered Nurse (RN), Midwife (RM), Psychiatric Nurse (RPN).</li>
+          <li>Strategic Leadership Certification – NIPSS (2022).</li>
+          <li>
+            International Certifications – University of Washington (2020).
+          </li>
+          <li>Multiple peer-reviewed academic publications.</li>
+        </ul>
+      </section>
+
+      <!-- BUSINESS -->
+      <section class="section" id="business">
+        <h2>Business & Leadership</h2>
+        <p>
+          Experienced administrator and public sector leader with expertise in
+          health systems strengthening and policy coordination.
+        </p>
+        <ul>
+          <li>Facilitator – UNFPA Adolescent Health Programs.</li>
+          <li>Strategic planner and coordinator of government initiatives.</li>
+          <li>Leadership & management training facilitator.</li>
+          <li>Recognized for effective policy implementation.</li>
+        </ul>
+      </section>
+
+      <!-- CAREER -->
+      <section class="section" id="career">
+        <h2>Career as Permanent Secretary</h2>
+        <p>
+          Retired <span class="highlight">Permanent Secretary</span>, Akwa Ibom
+          State Civil Service.
+        </p>
+        <ul>
+          <li>Chief Accounting Officer coordinating MDAs.</li>
+          <li>Deputy Director – State Adolescent Health Desk Officer.</li>
+          <li>Secretary, State Boundary Committee.</li>
+          <li>Led public health interventions and immunization campaigns.</li>
+          <li>Represented Deputy Governor at official functions.</li>
+        </ul>
+        <p>
+          Her leadership strengthened public health systems and enhanced
+          institutional accountability in Akwa Ibom State.
+        </p>
+      </section>
+    </div>
+
+    <footer>© 2026 Dr. Grace Paulinus Jim | Professional Profile</footer>
+
+    <script>
+      /* Scroll Animation */
+      const sections = document.querySelectorAll('.section');
+
+      window.addEventListener('scroll', () => {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+
+          if (sectionTop < triggerBottom) {
+            section.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
